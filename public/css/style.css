@@ -1,0 +1,19 @@
+ * {
+    font-size: 12;
+    padding: 0;
+    border: none;
+    font-family: "Lexend", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+ }
+
+ @font-face {
+    font-family: 'AvenirNextLTPro-Regular';
+    src: url('http://anthillrealtors.co.id/wp-content/themes/x-child/fonts/AvenirNextLTPro-Regular.eot');
+    src: url('http://anthillrealtors.co.id/wp-content/themes/x-child/fonts/AvenirNextLTPro-Regular.eot?#iefix') format('embedded-opentype'),
+       url('http://anthillrealtors.co.id/wp-content/themes/x-child/fonts/AvenirNextLTPro-Regular.woff') format('woff'),
+       url('http://anthillrealtors.co.id/wp-content/themes/x-child/fonts/AvenirNextLTPro-Regular.ttf') format('truetype'),
+       url('http://anthillrealtors.co.id/wp-content/themes/x-child/fonts/AvenirNextLTPro-Regular.svg#AvenirNextLTPro-Regular') format('svg');
+ }
+
+ 
