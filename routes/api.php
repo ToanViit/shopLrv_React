@@ -30,7 +30,7 @@ Route::put('review/{id}',[ReviewController::class, 'index'])->name("review.updat
 
 
 //PRODUCT 
-Route::get('product', [ProductController::class, 'index'])->name("review.index");
+Route::get('getListProduct', [ProductController::class, 'getListProduct'])->name("product.list");
 Route::post('product/store', [ProductController::class, 'store'])->name("review.store");
 Route::get('product/{id}', [ProductController::class, 'create'])->name("reviews.create");
 Route::put('product/{id}',[ProductController::class, 'index'])->name("review.update");

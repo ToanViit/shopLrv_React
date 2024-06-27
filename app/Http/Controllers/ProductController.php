@@ -10,9 +10,9 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    { 
-        $product =  Product::all();
+    public function getListProduct()
+    {
+        $product = Product::all();
         return response()->json($product);
 
     }
@@ -29,18 +29,17 @@ class ProductController extends Controller
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    { 
+    {
         $request->validate([
-         "price"=>"integer",
-         "stock"=>"integer",
+            "price" => "integer",
+            "stock" => "integer",
         ]);
-$productCreate = Product::create($request->all());
-        return   response()->json(['message'=> 'add', 
-        'productCreate' => $productCreate]);
+        $productCreate = Product::create($request->all());
+        return response()->json(['message' => 'add',
+            'productCreate' => $productCreate]);
     }
 
-        //
-
+    //
 
     /**
      * Display the specified resource.

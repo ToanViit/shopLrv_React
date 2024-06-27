@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
-// use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,4 +22,6 @@ Route::get('/', function () {
 //     return view('productDetail');
 // });
 Route::get('listuser', [PostController::class, 'index'])->name('listuser.index');
+
+// Route::get('listProduct', [ProductController::class, 'showAllProduct'])->name('listProduct.list');
 
